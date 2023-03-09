@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Selectores CSS</title>
+    <style>
+      #fecha-hora {
+        text-align: right;
+        font-size: 10px;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body background="http://drive.google.com/uc?export=view&id=1sb1jFqXqGw-1u6z69_duh_zgmD5Fj2um" transparent filter:alpha(opacity=90) height="10%" width="10%">
+<hr>
+<table WIDTH="90%" background-color:>
+  <tr>
+    <th><h1><FONT COLOR="WHITE">DISEÑO SITIOS WEB</FONT></h1></th>
+    <th><FONT COLOR="WHITE">Estudiante: Gueynen Jhoan Mestra Flórez</FONT></th>
+  </tr>
+  <tr>
+    <th></th>
+    <th><FONT COLOR="WHITE">Tutor: Mario Luis Ávila Pérez</FONT></th>
+  </tr>
+  <tr>
+    <th><h1><FONT COLOR="WHITE">UNIVERSIDAD ABIERTA Y DISTANCIA - UNAD</FONT></h1></th>
+    <th><FONT COLOR="WHITE">Escuela: Ciencias Basicas Tecnologia e Ingenieria</FONT></th>
+  </tr>
+</table>
+<hr>
+    <h2 style="background:white">Selectores CSS</h2>
+    <p style="background:white">Los selectores CSS son patrones que se utilizan para seleccionar elementos HTML específicos y aplicarles estilos de diseño visual. Los selectores CSS permiten al diseñador web aplicar estilos específicos a los elementos HTML y sus descendientes (hijos) basados en sus etiquetas HTML, atributos, clases, identificadores o la relación entre ellos.</p>
+    <p style="background:white">Por ejemplo: </p>
+    <p style="background:white">Los selectores CSS son una herramienta poderosa para crear sitios web visualmente atractivos y bien organizados.</p>
+    
+    <ul>
+      <li style="background:white">Selector de etiqueta: Selecciona todos los elementos de una etiqueta específica en una página web. Por ejemplo, el selector p seleccionaría todos los párrafos en la página.
+      <li style="background:white">Selector de clase: Selecciona todos los elementos que tienen un valor de clase específico. Por ejemplo, el selector .mi-clase seleccionaría todos los elementos que tienen una clase llamada "mi-clase".
+      <li style="background:white">Selector de ID: Selecciona el elemento que tiene un valor de identificación específico. Por ejemplo, el selector #mi-id seleccionaría el elemento que tiene un atributo "id" con el valor "mi-id".
+      <li style="background:white">Selector de atributo: Selecciona todos los elementos que tienen un atributo específico. Por ejemplo, el selector [type="text"] seleccionaría todos los elementos que tienen un atributo "type" con el valor "text".
+      <li style="background:white">Selector descendiente: Selecciona un elemento que es descendiente de otro elemento. Por ejemplo, el selector div p seleccionaría todos los elementos p que son descendientes de elementos div.
+      </ul>
+  <hr>
+  <table WIDTH="100%" border = '0'>
+    <tr>
+      <th WIDTH="50%"><h2>Mockup</h2></th>
+      <th WIDTH="50%"><h3>Acerca de</h3></th>
+    </tr>
+    <tr>
+      <th><a href="http://drive.google.com/uc?export=view&id=1mNKvlr9Wcjq1BlrHfCzIcz0sEjYBH09J"><img src="http://drive.google.com/uc?export=view&id=1mNKvlr9Wcjq1BlrHfCzIcz0sEjYBH09J" eight=300 width=300></a></th>
+      <th><p style="background:white">Bienvenido al sitio web sobre Selectores CSS. En este sitio, nos enfocamos en explicar qué son los selectores CSS y cómo funcionan en la creación de estilos para páginas web.
+
+        Los selectores CSS son elementos fundamentales en la creación de estilos para páginas web. Permiten a los diseñadores web especificar qué elementos HTML deben ser estilizados y cómo deben ser estilizados. Con el uso de selectores CSS, se pueden establecer colores, fuentes, márgenes, bordes, estilos de texto y mucho más en una página web.
+        
+        En este sitio web, encontrarás información detallada sobre los distintos tipos de selectores CSS, cómo se usan, ejemplos de código y mejores prácticas para crear estilos efectivos y eficientes. También exploraremos cómo los selectores CSS pueden ayudar a mejorar la accesibilidad y la usabilidad de una página web.
+        
+        Si estás interesado en aprender más sobre los selectores CSS y cómo utilizarlos en tus proyectos de diseño web, estás en el lugar correcto. ¡Explora nuestro sitio y descubre todo lo que necesitas saber sobre los selectores CSS!</p>
+      </th>
+    </tr>
+  </table>
+  <hr>
+    <div id="fecha-hora">
+      <p>Fecha y hora actual: <span id="fecha"></span></p>
+    </div>
+    <script>
+      function actualizarFecha() {
+        var ahora = new Date();
+        var dia = ahora.getDate();
+        var mes = ahora.getMonth() + 1;
+        var año = ahora.getFullYear();
+        var hora = ahora.getHours();
+        var minutos = ahora.getMinutes();
+        var segundos = ahora.getSeconds();
+        var fecha = dia + "/" + mes + "/" + año + " " + hora + ":" + minutos + ":" + segundos;
+        document.getElementById("fecha").innerHTML = fecha;
+      }
+      setInterval(actualizarFecha, 1000);
+    </script>
+  </body>
+</html>
